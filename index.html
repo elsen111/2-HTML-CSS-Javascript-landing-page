@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Linking font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+        <!-- Linking stylesheet -->
+        <link rel="stylesheet" href="./main.css">
+
+        <!-- Linking logo image on the title tab -->
+        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+        <title> Lab Technologies </title>
+    </head>
+
+    <body>
+        <!-- Start of Header Part -->
+        <header class="transition">
+            <div class="container flex">
+                <div id="logo">
+                    <a href="#home"><img src="./images/logo.png" alt="logo image"></a>
+                </div>
+
+                <div id="menu-btn" class="menu">
+                    <i class="fa-solid fa-bars menu"  onclick="showNav()"></i>
+                </div>
+
+                <div id="top-navbar" class="transition">
+                    <div id="cover"></div>
+                    <ul class="flex list">
+                        <li><a href="#intro"  onclick="activateScroll()" class="link fs-16 text-capitalize text-blue"> home </a></li>
+                        <li><a href="#page" onclick="activateScroll()" class="link fs-16 text-capitalize text-blue"> pages </a></li>
+                        <li><a href="#research" onclick="activateScroll()" class="link fs-16 text-capitalize text-blue"> research </a></li>
+                        <li><a href="#main-service" onclick="activateScroll()" class="link fs-16 text-capitalize text-blue"> services </a></li>
+                        <li><a href="#blog" onclick="activateScroll()" class="link fs-16 text-capitalize text-blue"> blog </a></li>
+                        <li><a href="#contact" onclick="activateScroll()" class="link fs-16 text-capitalize text-blue"> contacts </a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- End of Header Part -->
+
+        <!-- Start of Main Part -->
+        <main>
+            <section id="intro">
+                <div id="left-arrow" class="slide-btn" onclick="handleSlide(this)">
+                    <i id="prev" class="fa-solid fa-chevron-left fa-4x text-white transition"></i>
+                </div>
+
+                <div id="intro-slider" class="transition">
+                    <div id="slides-container" class="flex">
+                        <div id="slide1" class="bg-img" >
+                            <div class="slide container flex flex-column">
+                                <h1 class="text-uppercase fw-700 text-white">
+                                    advances of science
+                                    <br>
+                                    make easier life
+                                </h1>
+        
+                                <p class="para text-white">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    <!-- <br> -->
+                                    Dolor iste assumenda unde, adipisci earum consectetur?
+                                </p>
+        
+                                <div>
+                                    <a href="#" class="flex btn-border link text-white text-capitalize fs-16 fw-600 transition"> read more </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="slide2" class="bg-img">
+                            <div class="slide container flex flex-column">
+                                <h1 class="text-uppercase fw-700 text-white">
+                                    advances of science
+                                    <br>
+                                    make easier life
+                                </h1>
+        
+                                <p class="para text-white">
+                                    Labtech strives to integrate professionals with
+                                    <br>
+                                    companies and organizations around the world
+                                </p>
+        
+                                <div>
+                                    <a href="#" class="flex btn-border link text-white text-capitalize fs-16 fw-600 transition"> read more </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="slide3" class="bg-img">
+                            <div class="slide container flex flex-column">
+                                <h1 class="text-uppercase fw-700 text-white">
+                                    advances of science
+                                    <br>
+                                    make easier life
+                                </h1>
+        
+                                <p class="para text-white">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    <br>
+                                    Dolor iste assumenda unde, adipisci earum consectetur?
+                                </p>
+        
+                                <div>
+                                    <a href="#" class="flex btn-border link text-white text-capitalize fs-16 fw-600 transition"> read more </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="slide4" class="bg-img">
+                            <div class="slide container flex flex-column">
+                                <h1 class="text-uppercase fw-700 text-white">
+                                    advances of science
+                                    <br>
+                                    make easier life
+                                </h1>
+        
+                                <p class="para text-white">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    <br>
+                                    Eos id, ipsam in possimus deleniti eligendi.
+                                </p>
+        
+                                <div>
+                                    <a href="#" class="flex btn-border link text-white text-capitalize fs-16 fw-600 transition"> read more </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="right-arrow" class="slide-btn" onclick="handleSlide(this)">
+                    <i id="next" class="fa-solid fa-chevron-right text-white fa-4x transition"></i>
+                </div>
+            </section>
+
+            <section id="features">
+                <div class="container flex">
+                    <div class="feature-card flex px-16">
+                        <div class="feature-card-icon flex">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+
+                        <div class="feature-card-content">
+                            <h4 class="text-uppercase text-darkBlue fw-600 fs-18"> hematology & histology </h4>
+                            <p class="para text-gray transition">
+                                Lorem ipsum dolor sit amet, consectetur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card flex px-16">
+                        <div class="feature-card-icon flex">
+                            <i class="fa-solid fa-street-view"></i>
+                        </div>
+
+                        <div class="feature-card-content">
+                            <h4 class="text-uppercase text-darkBlue fw-600 fs-18"> coagulation & cytology </h4>
+                            <p class="para text-gray">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card flex px-16">
+                        <div class="feature-card-icon flex">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+
+                        <div class="feature-card-content">
+                            <h4 class="text-uppercase text-darkBlue fw-600 fs-18"> blood bank & chemistry </h4>
+                            <p class="para text-gray">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="page" class="bg-img">
+                <div class="container">
+                    <h3 class="section-title bold-title lined text-uppercase"> technology company </h3>
+
+                    <p class="para text-darkBlue">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus 
+                        <!-- <br> -->
+                        expedita magnam non eligendi reiciendis corporis!
+                    </p>
+
+                    <ul class="list">
+                        <li>
+                            <a href="#" class="link text-capitalize para text-gray transition">
+                            <i class="fa-solid fa-chevron-right fa-1x text-blue"></i>
+                            pharmacology
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="link text-capitalize para text-gray transition">
+                            <i class="fa-solid fa-chevron-right fa-1x text-blue"></i>
+                            microbiology
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="link text-capitalize para text-gray transition">
+                            <i class="fa-solid fa-chevron-right fa-1x text-blue"></i>
+                            biotechnology
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="link text-capitalize para text-gray transition">
+                            <i class="fa-solid fa-chevron-right fa-1x text-blue"></i>
+                            genetic engineering
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div>
+                        <a href="#" class="btn flex text-uppercase link fs-16 fw-600 transition text-blue"> view all </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="research">
+                <div class="container">
+                    <h3 class="section-title text-uppercase">
+                        <span class="light"> evaluation of the current safety </span>
+                        <br>
+                        <span class="bold"> we are the trusted experts </span>
+                    </h3>
+
+                    <div class="research-cards-container">
+                        <div class="research-card mb-20 px-16">
+                            <div class="flex br-10">
+                                <div class="research-card-icon flex">
+                                    <i class="fa-solid fa-briefcase text-blue fa-4x"></i>
+                                </div>
+    
+                                <div class="research-card-content">
+                                    <h4 class="fs-18 text-uppercase text-darkBlue fw-600"> lab technicians </h4>
+                                    <p class="para text-gray">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="research-card mb-20 px-16">
+                            <div class="flex br-10">
+                                <div class="research-card-icon flex">
+                                    <i class="fa-regular fa-building text-blue fa-4x"></i>
+                                </div>
+    
+                                <div class="research-card-content">
+                                    <h4 class="fs-18 text-uppercase text-darkBlue fw-600"> research center </h4>
+                                    <p class="para text-gray">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="research-card mb-20 px-16">
+                            <div class="flex br-10">
+                                <div class="research-card-icon flex">
+                                    <i class="fa-solid fa-user-doctor text-blue fa-4x"></i>
+                                </div>
+    
+                                <div class="research-card-content">
+                                    <h4 class="fs-18 text-uppercase text-darkBlue fw-600"> our expert </h4>
+                                    <p class="para text-gray">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="research-card mt-20 px-16">
+                            <div class="flex br-10">
+                                <div class="research-card-icon flex">
+                                    <i class="fa-solid fa-flask text-blue fa-4x"></i>
+                                </div>
+    
+                                <div class="research-card-content">
+                                    <h4 class="fs-18 text-uppercase text-darkBlue fw-600"> lab technicians </h4>
+                                    <p class="para text-gray">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="research-card mt-20 px-16">
+                            <div class="flex br-10">
+                                <div class="research-card-icon flex">
+                                    <i class="fa-solid fa-square-check text-blue fa-4x"></i>
+                                </div>
+    
+                                <div class="research-card-content">
+                                    <h4 class="fs-18 text-uppercase text-darkBlue fw-600"> research center </h4>
+                                    <p class="para text-gray">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="research-card mt-20 px-16">
+                            <div class="flex br-10">
+                                <div class="research-card-icon flex">
+                                    <i class="fa-regular fa-file-lines text-blue fa-4x"></i>
+                                </div>
+    
+                                <div class="research-card-content">
+                                    <h4 class="fs-18 text-uppercase text-darkBlue fw-600"> our expert </h4>
+                                    <p class="para text-gray">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="service">
+                <div class="container flex">
+                    <div id="service-left">
+                        <h3 class="section-title text-uppercase lined">
+                            <span class="light"> laboratory priority </span>
+                            <span class="bold"> services delivered </span>
+                        </h3>
+
+                        <p class="para fw-700 text-darkBlue">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, doloremque!
+                        </p>
+                    </div>
+
+                    <div id="service-right">
+                        <div id="service-cards-container" class="flex">
+                            <div id="left" class="px-16">
+                                <div class="service-card br-10 transition">
+                                    <div class="service-card-img br-10 flex">
+                                        <i class="fa-solid fa-chart-column fs-24 text-white"></i>
+                                    </div>
+
+                                    <h4 class="text-uppercase text-darkBlue fs-24 fw-600 transition"> analyzing </h4>
+
+                                    <p class="para text-gray">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+
+                                <div class="service-card br-10 transition">
+                                    <div class="service-card-img br-10 flex">
+                                        <i class="fa-solid fa-heart-pulse text-white fs-24"></i>
+                                    </div>
+
+                                    <h4 class="text-uppercase text-darkBlue fs-24 fw-600 transition"> treatment </h4>
+
+                                    <p class="para text-gray">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="right">
+                                <div class="service-card br-10 transition">
+                                    <div class="service-card-img br-10 flex">
+                                        <i class="fa-solid fa-stethoscope fs-24 text-white"></i>
+                                    </div>
+
+                                    <h4 class="text-uppercase text-darkBlue fs-24 fw-600 transition"> testing </h4>
+
+                                    <p class="para text-gray">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+
+                                <div class="service-card br-10 transition">
+                                    <div class="service-card-img br-10 flex">
+                                        <i class="fa-solid fa-pen-to-square fs-24 text-white"></i>
+                                    </div>
+
+                                    <h4 class="text-uppercase text-darkBlue fs-24 fw-600 transition"> diagnostic </h4>
+
+                                    <p class="para text-gray">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="companies" class="bg-img">
+                <div class="container">
+                    <div class="flex">
+                        <div class="flex br-10">
+                            <i class="fa-solid fa-arrow-trend-up text-blue fs-24"></i>
+                        </div>
+                        <h4 class="text-blue text-uppercase fs-24 fw-700"> we are trusted by world's leading companies </h4>
+                    </div>
+
+                    <div id="progress-bars-container">
+                        <div class="progress-bar">
+                            <div class="flex">
+                                <h5 class="company-name text-uppercase fs-16 fw-600"> biotechnology </h5>
+                                <span class="percentage fw-600 text-blue fs-16"> 90% </span>
+                            </div>
+                            <div class="progress-range-container">
+                                <div class="progress-range"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="flex">
+                                <h5 class="company-name text-uppercase fs-16 fw-600"> microbiology </h5>
+                                <span class="percentage fw-600 text-blue fs-16"> 80% </span>
+                            </div>
+                            <div class="progress-range-container">
+                                <div class="progress-range"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="flex">
+                                <h5 class="company-name text-uppercase fs-16 fw-600"> medical research </h5>
+                                <span class="percentage fw-600 text-blue fs-16"> 75% </span>
+                            </div>
+                            <div class="progress-range-container">
+                                <div class="progress-range"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="main-service">
+                <div class="container">
+                    <div class="top flex">
+                        <div id="main-service-icon" class="flex">
+                            <i class="fa-solid fa-briefcase text-blue"></i>
+                        </div>
+
+                        <div id="main-service-content">
+                            <h3 class="section-title text-uppercase lined fw-700"> explore our main services </h3>
+                            <p class="para text-gray">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                <br>
+                                Eos tempora quibusdam provident, iure facere, culpa consequatur neque vel ipsum at.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bottom flex">
+                        <div class="card br-10">
+                            <div class="card-image bg-img">
+                                <div class="card-icon br-10 flex">
+                                    <i class="fa-solid fa-flask"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h4 class="text-darkBlue fs-18 text-capitalize lined"> chemical research </h4>
+                                <p class="para text-gray">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card br-10">
+                            <div class="card-image bg-img">
+                                <div class="card-icon br-10 flex">
+                                    <i class="fa-solid fa-flask"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h4 class="text-darkBlue fs-18 text-capitalize lined"> diabetes testing </h4>
+                                <p class="para text-gray">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card br-10">
+                            <div class="card-image bg-img">
+                                <div class="card-icon br-10 flex">
+                                    <i class="fa-solid fa-flask"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h4 class="text-darkBlue fs-18 text-capitalize lined"> alternative energy </h4>
+                                <p class="para text-gray">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="help">
+                <div class="container flex">
+                    <div class="flex">
+                        <div class="flex">
+                            <i class="fa-regular fa-circle-question text-blue"></i>
+                        </div>
+                        <div class="px-16">
+                            <h5 class="section-title fw-700 text-capitalize"> have any questions ? </h5>
+                            <p class="para text-gray"> We are here to help </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#" class="btn link flex fs-16 fw-600 transition text-white text-capitalize"> 
+                            <span class="transition"> get help here </span>
+                            <i class="fa-solid fa-arrow-right transition"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog">
+                <div class="container">
+                    <h3 class="section-title text-uppercase"> latest news & blogs </h3>
+                    <div id="blog-cards-container" class="flex">
+                        <div class="blog-card-wrapper px-16">
+                            <div class="blog-card br-10 transition">
+                                <a href="#" class="blog-link link flex transition">
+                                    <i class="fa-solid fa-angle-right fs-24 text-white"></i>
+                                </a>
+
+                                <div class="bg-img">
+                                    <div class="blog-date">
+                                        <i class="fa-solid fa-calendar-days text-blue fs-16"></i>
+                                        <span class="para text-darkBlue"> Sept 9, 2019 </span>
+                                    </div>
+                                </div>
+
+                                <div class="blog-card-content">
+                                    <h4 class="blog-card-title fs-18 text-darkBlue fw-600"> Tests with Nursing Implications </h4>
+                                    <p class="para text-gray"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... </p>
+                                </div>
+
+                                <div class="blog-card-contact flex">
+                                    <span class="author-name para text-capitalize text-darkBlue"> admin </span>
+                                    <span class="author-accounts flex">
+                                        <a href="https://facebook.com">
+                                            <i class="fa-brands fa-facebook-f text-blue fs-16 transition"></i>
+                                        </a>
+                                        
+                                        <a href="https://twitter.com">
+                                            <i class="fa-brands fa-twitter text-blue fs-16 transition"></i>
+                                        </a>
+
+                                        <a href="https://linkedin.com">
+                                            <i class="fa-brands fa-linkedin text-blue fs-16 transition"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card-wrapper px-16">
+                            <div class="blog-card br-10 transition">
+                                <a href="#" class="blog-link link flex transition">
+                                    <i class="fa-solid fa-angle-right fs-24 text-white"></i>
+                                </a>
+
+                                <div class="bg-img">
+                                    <div class="blog-date">
+                                        <i class="fa-solid fa-calendar-days text-blue fs-16"></i>
+                                        <span class="para text-darkBlue"> Sept 13, 2019 </span>
+                                    </div>
+                                </div>
+
+                                <div class="blog-card-content">
+                                    <h4 class="blog-card-title fs-18 text-darkBlue fw-600"> Methods of the recruitment </h4>
+                                    <p class="para text-gray"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... </p>
+                                </div>
+
+                                <div class="blog-card-contact flex">
+                                    <span class="author-name para text-capitalize text-darkBlue"> admin </span>
+                                    <span class="author-accounts flex">
+                                        <a href="https://facebook.com">
+                                            <i class="fa-brands fa-facebook-f text-blue fs-16 transition"></i>
+                                        </a>
+                                        
+                                        <a href="https://twitter.com">
+                                            <i class="fa-brands fa-twitter text-blue fs-16 transition"></i>
+                                        </a>
+
+                                        <a href="https://linkedin.com">
+                                            <i class="fa-brands fa-linkedin text-blue fs-16 transition"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card-wrapper px-16">
+                            <div class="blog-card br-10 transition">
+                                <a href="#" class="blog-link link flex transition">
+                                    <i class="fa-solid fa-angle-right fs-24 text-white"></i>
+                                </a>
+
+                                <div class="bg-img">
+                                    <div class="blog-date">
+                                        <i class="fa-solid fa-calendar-days text-blue fs-16"></i>
+                                        <span class="para text-darkBlue"> Sept 13, 2019 </span>
+                                    </div>
+                                </div>
+
+                                <div class="blog-card-content">
+                                    <h4 class="blog-card-title fs-18 text-darkBlue fw-600"> Exploring Anatomy in the Lab </h4>
+                                    <p class="para text-gray"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor... </p>
+                                </div>
+
+                                <div class="blog-card-contact flex">
+                                    <span class="author-name para text-capitalize text-darkBlue"> admin </span>
+                                    <span class="author-accounts flex">
+                                        <a href="https://facebook.com">
+                                            <i class="fa-brands fa-facebook-f text-blue fs-16 transition"></i>
+                                        </a>
+                                        
+                                        <a href="https://twitter.com">
+                                            <i class="fa-brands fa-twitter text-blue fs-16 transition"></i>
+                                        </a>
+
+                                        <a href="https://linkedin.com">
+                                            <i class="fa-brands fa-linkedin text-blue fs-16 transition"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="study">
+                <div class="container">
+                    <h3 class="section-title text-uppercase flex px-16">
+                        <span class="title-icon">
+                            <i class="fa-solid fa-camera"></i>
+                        </span>
+                        latest cease studies
+                    </h3>
+
+                    <div id="study-cards-container" class="flex">
+                        <div class="px-16">
+                            <div class="study-card">
+                                <div class="study-card-img">
+                                    <img src="./images/study1.jpg" alt="study card image">
+                                </div>
+                                <div class="study-card-content transition">
+                                    <h5 class="study-card-title text-uppercase fs-18 fw-400 text-white"> oncology </h5>
+                                    <p class="para text-capitalize"> nanostructured materials </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-16">
+                            <div class="study-card">
+                                <div class="study-card-img">
+                                    <img src="./images/study2.jpg" alt="study card image">
+                                </div>
+                                <div class="study-card-content transition">
+                                    <h5 class="study-card-title text-uppercase fs-18 fw-400 text-white"> pathology </h5>
+                                    <p class="para text-capitalize"> organic synthesis </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-16">
+                            <div class="study-card">
+                                <div class="study-card-img">
+                                    <img src="./images/study3.jpg" alt="study card image">
+                                </div>
+                                <div class="study-card-content transition">
+                                    <h5 class="study-card-title text-uppercase fs-18 fw-400 text-white"> biosafety </h5>
+                                    <p class="para text-capitalize"> nuclear micro-reactors </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-16">
+                            <div class="study-card">
+                                <div class="study-card-img">
+                                    <img src="./images/study4.jpg" alt="study card image">
+                                </div>
+                                <div class="study-card-content transition">
+                                    <h5 class="study-card-title text-uppercase fs-18 fw-400 text-white"> pathology </h5>
+                                    <p class="para text-capitalize"> laboratory quality control </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-16">
+                            <div class="study-card">
+                                <div class="study-card-img">
+                                    <img src="./images/study5.jpg" alt="study card image">
+                                </div>
+                                <div class="study-card-content transition">
+                                    <h5 class="study-card-title text-uppercase fs-18 fw-400 text-white"> oncology </h5>
+                                    <p class="para text-capitalize"> cell and molecular biology </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-16">
+                            <div class="study-card">
+                                <div class="study-card-img">
+                                    <img src="./images/study6.jpg" alt="study card image">
+                                </div>
+                                <div class="study-card-content transition">
+                                    <h5 class="study-card-title text-uppercase fs-18 fw-400 text-white"> incubator </h5>
+                                    <p class="para text-capitalize"> surface cleaning </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="feedback">
+                <div class="container">
+                    <h3 class="section-title text-darkBlue text-uppercase flex px-16">
+                        <span class="title-icon"><i class="fa-solid fa-user"></i></span>
+                        testimonials
+                    </h3>
+
+                    <div id="feedback-cards-container" class="flex">
+                        <div class="px-16">
+                            <div class="feedback-card">
+                                <div class="user-img">
+                                    <img src="./images/testimonial1.jpg" alt="user image">
+                                </div>
+                                
+                                <div class="star-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="para feedback-content text-gray">
+                                    Click on the text in the block and enter the text you want to show.
+                                </p>
+    
+                                <div class="username flex">
+                                    <hr>
+                                    <a href="#" class="link text-darkBlue fs-16 fw-600"> Liza B. </a>  
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-16">
+                            <div class="feedback-card">
+                                <div class="user-img">
+                                    <img src="./images/testimonial2.jpg" alt="user image">
+                                </div>
+                                
+                                <div class="star-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="para feedback-content text-gray">
+                                    Click on the text in the block and enter the text you want to show.
+                                </p>
+    
+                                <div class="username flex">
+                                    <hr>
+                                    <a href="#" class="link text-darkBlue fs-16 fw-600"> John D. </a>  
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-16">
+                            <div class="feedback-card">
+                                <div class="user-img">
+                                    <img src="./images/testimonial3.jpg" alt="user image">
+                                </div>
+                                
+                                <div class="star-icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="para feedback-content text-gray">
+                                    Click on the text in the block and enter the text you want to show.
+                                </p>
+    
+                                <div class="username flex">
+                                    <hr>
+                                    <a href="#" class="link text-darkBlue fs-16 fw-600"> Elena P. </a>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- End of Main Part -->
+
+        <!-- Start of Footer Part -->
+        <footer>
+            <section id="bottom-navbar">
+               <div class="container">
+                    <div class="flex">
+                        <div id="brand">
+                            <img src="./images/logo.png" alt="logo image">
+                        </div>
+    
+                        <div id="links" class="px-16">
+                            <h4 class="text-uppercase text-darkBlue fs-18"> useful links </h4>
+                            <ul class="list">
+                                <li><a href="#" class="link text-blue fs-16 text-capitalize transition"> about us </a></li>
+                                <li><a href="#" class="link text-blue fs-16 text-capitalize transition"> our services </a></li>
+                                <li><a href="#" class="link text-blue fs-16 text-capitalize transition"> our team </a></li>
+                            </ul>
+                        </div>
+    
+                        <div id="service-links" class="px-16">
+                            <h4 class="text-uppercase text-darkBlue fs-18"> our services </h4>
+                            <ul class="list">
+                                <li><a href="#" class="link text-blue fs-16 text-capitalize transition"> scientific </a></li>
+                                <li><a href="#" class="link text-blue fs-16 text-capitalize transition"> chemistry </a></li>
+                                <li><a href="#" class="link text-blue fs-16 text-capitalize transition"> gemological </a></li>
+                            </ul>
+                        </div>
+    
+                        <div id="contact">
+                            <h4 class="text-uppercase text-darkBlue fs-18"> contacts </h4>
+                            <div class="flex">
+                                <input type="text" placeholder="Enter your email" class="text-gray transition">
+                                <button type="submit" title="submit" class="transition">
+                                    <i class="fa-solid fa-arrow-right text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div id="phone">
+                            <a href="#" class="link flex fs-18 text-gray fw-600 transition">
+                                <i class="fa-solid fa-phone text-blue fs-16"></i>
+                                1234 567 89 10
+                            </a>
+                        </div>
+
+                        <div id="socials" class="flex">
+                            <a href="https://youtube.com" class="link transition"><i class="fa-brands fa-youtube fs-16 text-blue"></i></a>
+                            <a href="https://facebook.com" class="link transition"><i class="fa-brands fa-facebook-f fs-16 text-blue"></i></a>
+                            <a href="https://linkedin.com" class="link transition"><i class="fa-brands fa-linkedin-in fs-16 text-blue"></i></a>
+                            <a href="https://vimeo.com" class="link transition"><i class="fa-brands fa-vimeo fs-16 text-blue"></i></a>                           
+                        </div>
+                    </div>
+               </div>
+            </section>
+
+            <section id="copyright">
+                <div class="container">
+                    <p class="para text-capitalize text-blue px-16"> &copy; copyright by elshan hasanov - all rights reserved </p>
+                </div>
+            </section>
+        </footer>
+        <!-- End of Footer Part -->
+
+        <!-- To top button -->
+        <div class="to-top br-10 transition flex">
+            <a href="#intro" class="link">
+                <i class="fa-solid fa-angle-up text-blue"></i>
+            </a>
+        </div>
+
+        <!-- Linking Javascript file -->
+        <script src="./main.js"></script>
+    </body>
+</html>
