@@ -1,1 +1,3 @@
-# HTML-CSS-Javascript-landing-page
+Preview
+<br>
+https://2lab-technologies.netlify.app/
